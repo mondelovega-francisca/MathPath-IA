@@ -35,7 +35,7 @@ Based on this analysis, the AI ​​generates personalized learning paths, adju
 
 The main users are secondary and high school students and teachers. Considerations must include the diversity of learning paces, the clarity of feedback for students, the interpretability of data for teachers, and respect for the privacy of educational information.
 
-![image of MathIA app](/MathIA.png)
+![image of MathIA app](/Mates.png)
 
 
 ## Data sources and AI methods
