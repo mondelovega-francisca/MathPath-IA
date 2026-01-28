@@ -39,28 +39,41 @@ The main users are secondary and high school students and teachers. Consideratio
 
 
 ## Data sources and AI methods
-Where does your data come from? Do you collect it yourself or do you use data collected by someone else?
-If you need to use links, here's an example:
-[Twitter API](https://developer.twitter.com/en/docs)
+Methods from the "Building AI" course that fit your project (and why)
+*Supervised learning (classification)
+The main problem is diagnosing the type of difficulty (e.g., sign error, rule confusion, conceptual error) based on the evidence or data provided by the learner: response, steps, time, error patterns.
+*Linear regression (supervised regression)
+Useful for predicting continuous variables such as "risk of failure," "expected grade," "estimated mastery time," or "probability of passing the exam in X hours."
+*k-NN
+As a benchmark: compare the learner to "similar learners" based on error patterns and make a decision.
+*Logistic regression / Small neural networks (MLP)
+When the features are not linear (combination of time + sequence of steps + type of error).
+*Overfitting control (validation, regularization, and dropout, for example)
+The application will have noisy data (students "trolling," incomplete answers, stress).
+*Reinforcement Learning (RL)
+This could be used later to optimize the sequence of activities as an "agent" that maximizes reward (passing/retention), but it is not necessary for the first version.
 
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
 
 ## Challenges
 
-What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
+This project is not intended to replace teachers, formal assessment, or comprehensive learning analysis systems. It focuses on diagnosing specific conceptual and procedural difficulties within a mathematical domain, and its conclusions are limited by the scope and quality of the available data.
+
+The AI ​​model does not infer students' motivation, emotional state, or learning potential. It only analyzes observable interaction data (responses, timing, and simple behavioral cues), which may not fully reflect student understanding. Therefore, misdiagnoses are possible, especially with limited data or atypical student behavior.
+
+The system relies on synthetic or small-scale datasets in its initial stages. Consequently, the model's performance may not be generalizable to diverse student populations without further data collection and validation. The project does not address long-term learning outcomes or the causal effects of interventions.
+
+From an ethical perspective, the system must ensure student privacy and data protection, particularly when collecting interaction-level data. All student data must be anonymized, stored securely, and used exclusively for educational purposes. The system should avoid high-risk decisions and be used as a support tool rather than an authoritative evaluator, with teachers retaining full pedagogical control.
 
 ## What next?
 
-How could your project grow and become something even more? What kind of skills, what kind of assistance would you  need to move on? 
+This project can evolve by expanding both its pedagogical scope and its AI components. In the short term, the system could incorporate topics and skills from other subjects, allowing the diagnostic model to operate within a broader curriculum, rather than solely focusing on mathematical concepts. This would facilitate more meaningful learning pathways and longitudinal analysis of student progress across various competencies.
+
+From a technical perspective, future versions could integrate knowledge tracking models to estimate skill mastery over time, as well as improved feature extraction from student responses. Collecting real-world classroom data would significantly enhance the model's validity and robustness.
+
+Moving forward, the project would require collaboration with educators to refine pedagogical guidelines and validate recommendations, along with support from data protection and ethics specialists to ensure responsible implementation. Additional skills in educational data mining, user interface design, and scalable systems deployment would also be needed to transition from a prototype to a production-ready educational tool.
 
 
 ## Acknowledgments
 
-* list here the sources of inspiration 
-* do not use code, images, data etc. from others without permission
-* when you have permission to use other people's materials, always mention the original creator and the open source / Creative Commons licence they've used
-  <br>For example: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
-* etc
+* My students and of course my cat
+
